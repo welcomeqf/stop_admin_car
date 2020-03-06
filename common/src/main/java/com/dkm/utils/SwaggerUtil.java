@@ -16,8 +16,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Date 2019/8/22
  * @Version 1.0
  */
-@Configuration
-@EnableSwagger2
 public class SwaggerUtil {
 
     @Bean
@@ -28,7 +26,7 @@ public class SwaggerUtil {
                 //控制暴露出去的路径下的实例
                 //如果某个接口不想暴露,可以使用以下注解
                 //@ApiIgnore 这样,该接口就不会暴露在 swagger2 的页面下
-                .apis(RequestHandlerSelectors.basePackage("eqlee.ctm.*.*.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.dkm.*.*.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -36,7 +34,7 @@ public class SwaggerUtil {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 //页面标题
-                .title("Ctm 接口文档")
+                .title("接口文档")
                 //条款地址
                 .termsOfServiceUrl("http://despairyoke.github.io/")
                 .contact("vincent")

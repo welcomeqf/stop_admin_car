@@ -12,3 +12,7 @@ spring:
     name: dkm-resource
   jmx:
     enabled: false
+
+app:
+  workerId: 9
+  dataCenterId: 1

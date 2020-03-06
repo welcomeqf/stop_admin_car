@@ -6,7 +6,7 @@
         <groupId>com.dkm</groupId>
         <artifactId>stop_admin_car</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>resource</artifactId>
     <packaging>war</packaging>

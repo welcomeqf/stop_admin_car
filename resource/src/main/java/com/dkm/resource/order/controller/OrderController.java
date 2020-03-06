@@ -1,5 +1,6 @@
 package com.dkm.resource.order.controller;
 
+import com.dkm.aop.IsBean;
 import com.dkm.constanct.CodeType;
 import com.dkm.exception.ApplicationException;
 import com.dkm.jwt.islogin.CheckToken;
@@ -20,7 +21,7 @@ import java.util.List;
  * @date 2020/3/5
  * @vesion 1.0
  **/
-@Api
+@Api(tags = "订单Api")
 @Slf4j
 @RestController
 @RequestMapping("/v1/order")
